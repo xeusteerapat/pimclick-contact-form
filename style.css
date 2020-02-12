@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 450px auto;
+  background-color: rgb(114, 114, 114);
+  z-index: 1;
+  padding: 2rem;
+}
