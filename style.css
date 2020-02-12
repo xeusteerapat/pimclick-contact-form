@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+:root {
+  --border-color: rgb(216, 216, 216);
+  --label-color: rgb(110, 110, 110);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
 }
 
 img {
@@ -12,9 +24,54 @@ img {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1100px;
+  position: sticky;
   margin: 450px auto;
-  background-color: rgb(114, 114, 114);
+  background-color: white;
   z-index: 1;
-  padding: 2rem;
+  padding: 4rem;
+  border-radius: 20px;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-control {
+  width: 100%;
+  padding-right: 1.2rem;
+}
+
+.form-control input {
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  height: 3rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.form-control > label {
+  color: var(--label-color);
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  margin: 0.75rem 0 2.5rem 0;
+  border: 1px solid var(--border-color);
+}
+
+button {
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  background-color: orangered;
+  color: white;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 0;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
